@@ -1,0 +1,2 @@
+# webStackTraining
+different development exercises
