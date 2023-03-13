@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Pictures and Images</title>
+    </head>
+    <body>
+        <h1>Bilder</h1>
+        <h2>Die Einbettung mittels Bilder</h2>
+        <figure>
+            <img src="./bilder/igel_640.jpg" alt="niedlicher Igel 640">
+            <figcaption>&copy; Pixabay | www.pixabay.com | <a href="https://pixabay.com/de/photos/igel-niedlich-stachelig-tiere-7710053/" target="_blank">zur Bildquelle</a></figcaption>
+        </figure>
+        <h2>Die Einbettung mittels Bilder mit dem picture tag</h2>
+        <!--Figure Tag sagt dem Browser, dass eine Bildbeschriftung zu einem Bild gehört-->
+        <figure>
+            <picture>
+                <source srcset="./bilder/igel_640.jpg" media="(max-width:640px)">
+                <source srcset="./bilder/igel_1280.jpg" media="(max-width:1280px)">
+                <source srcset="-/bilder/igel_1920.jpg" media="(max-width:1920px)">
+                <img src="./bilder/igel_1920.jpg" alt="Das Bild ist leider nicht vorhanden">
+            </picture>
+            <figcaption>&copy; Pixabay | www.pixabay.com | <a href="https://pixabay.com/de/photos/igel-niedlich-stachelig-tiere-7710053/" target="_blank">zur Bildquelle again</a></figcaption>
+            <!--picture tag ist top wenn man performance saven will weil die größen der Bilder dann geladen wenden wenn sie gebraucht werden-->
+            <!--Bsp.: Wenn ich einen kleiner Auflösenden Bildschirm habe wird das kleinere Bild geladen-->
+            <!--Das img Tag wird benötigt für den alt tag-->
+            <!--Dynamische anpassung muss mit CSS geregelt werden-->
+        </figure>
+        <!--Übung Bilder nebeneinander-->
+        <!--Anordnung von Bildern kann nur mit CSS geregelt werden -->
+        <!--Plazierung von Bildunterschriften kann auch nur durch CSS geregelt werden -->
+        <h2>Übung: Bilder nebeneinander mit Bildbeschreibung</h2>
+        <figure>
+            <img src="./bilder/Bett1_200.jpg" alt="erstes Bett" width="200" height="200" style="float:left">
+            <figcaption>&copy; Amazon | www.amazon.com | <a href="https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=352566565909&hvpos=&hvnetw=g&hvrand=3547933439518640256&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062706&hvtargid=kwd-10573980&hydadcr=12763_1720986&gclid=EAIaIQobChMI8_SPkJDM_AIVVI9oCR04SQVqEAAYASAAEgIdp_D_BwE" target="_blank">Hier geht's zu Amazon</a></figcaption>
+        </figure>
+        <figure>
+            <img src="./bilder/Bett2_200.jpg" alt="zweites Bett" width="200" height="200" style="float:left">
+            <figcaption>&copy; Amazon | www.amazon.com | <a href="https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=352566565909&hvpos=&hvnetw=g&hvrand=3547933439518640256&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062706&hvtargid=kwd-10573980&hydadcr=12763_1720986&gclid=EAIaIQobChMI8_SPkJDM_AIVVI9oCR04SQVqEAAYASAAEgIdp_D_BwE" target="_blank">Hier geht's zu Amazon</a></figcaption>
+        </figure>
+        <figure>
+            <img src="./bilder/Bett3_200.jpg" alt="drittes Bett" width="200" height="200" style="float:left">
+            <figcaption>&copy; Amazon | www.amazon.com | <a href="https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=352566565909&hvpos=&hvnetw=g&hvrand=3547933439518640256&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062706&hvtargid=kwd-10573980&hydadcr=12763_1720986&gclid=EAIaIQobChMI8_SPkJDM_AIVVI9oCR04SQVqEAAYASAAEgIdp_D_BwE" target="_blank">Hier geht's zu Amazon</a></figcaption>
+        </figure>
+        <figure> 
+            <img src="./bilder/Bett4_200.jpg" alt="viertes Bett" width="200" height="200" style="float:left">
+            <figcaption>&copy; Amazon | www.amazon.com | <a href="https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=352566565909&hvpos=&hvnetw=g&hvrand=3547933439518640256&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062706&hvtargid=kwd-10573980&hydadcr=12763_1720986&gclid=EAIaIQobChMI8_SPkJDM_AIVVI9oCR04SQVqEAAYASAAEgIdp_D_BwE" target="_blank">Hier geht's zu Amazon</a></figcaption>
+        </figure>
+        <figure>
+            <img src="./bilder/Bett5_200.jpg" alt="fünftes Bett" width="200" height="200" style="float:left">
+            <figcaption>&copy; Amazon | www.amazon.com | <a href="https://www.amazon.de/?&tag=hydraamazon09-21&ref=pd_sl_781ozcfkw7_e&adgrpid=71137539015&hvpone=&hvptwo=&hvadid=352566565909&hvpos=&hvnetw=g&hvrand=3547933439518640256&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062706&hvtargid=kwd-10573980&hydadcr=12763_1720986&gclid=EAIaIQobChMI8_SPkJDM_AIVVI9oCR04SQVqEAAYASAAEgIdp_D_BwE" target="_blank">Hier geht's zu Amazon</a></figcaption>
+        </figure>
+        <img src="./bilder/haus_1920.jpg" alt="Modernes Hochhaus">
+        <figure>
+            <img src="./bilder/personen.jpg" alt="Zwei Personen sehen sich an" width="200">
+            <figcaption>test | test | test</figcaption>
+        </figure>
+    </body>
+</html>

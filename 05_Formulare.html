@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Formulare</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form methode="post">
+			<fieldset>
+				<legend>Personenbezogene Daten: </legend>
+				
+				<label for="Nachname">Ihr Nachname:</label>
+				<input type="text" name="NachName"  id="Nachname" placeholder="Ihr Nachname" required>
+				
+				<label for="Vorname">Ihr Vorname: </label>
+				<input type="text" name="VorName" id="Vorname" placeholder="Ihr Vorname">
+				
+				<label for="Geburtsdatum">Ihr Geburtsdatum: </label>
+				<input type="date" name="GeburtsDatum" placeholder="Ihr Geburtsdatum"required>
+				
+				<label for="Geschlecht">Ihr Geschlecht: </label>
+				<input type="radio" name="Geschlecht" value="weiblich" checked>
+				<input type="radio" name="Geschlecht" value="männlich">
+				<input type="radio" name="Geschlecht" value="divers">
+			</fieldset>
+			<fieldset>
+				<legend>Loginshit: </legend>
+				<label for="EMail">Ihre E-Mail Adresse:</label>
+				<input type="email" name="EMail" placeholder="Ihre Emailadresse" required>
+				<label for="Passwort">Ihr Passwort:</label>
+				<input type="password" name="Passwort" placeholder="Ihr Passwort" required>
+				
+			</fieldset>
+			<input type="submit" value="abschicken">
+		</form>
+		<h1>Formulare Übungsbeispiel</h1>
+		<form method="post">
+			<fieldset>
+				<legend>Login-Daten</legend>
+				<label for="Email">Emailadresse:</label>
+				<input type="email" name="Email" id="Email" required>
+				
+				<label for="Password">Passwort:</label>
+				<input type="password" name="Password" id="Password" required>
+				
+				<label for="Password">Passwort wiederholen</label>
+				<input type="password" name="WiederholtesPassword" placeholder="Passwort wiederholen" id="Password" required>
+			</fieldset>
+			<fieldset>
+				<legend>Persönliche Daten</legend>
+				<label for="Vorname">
+			</fieldset>
+		</form>
+	</body>
+</html>
